@@ -20,30 +20,42 @@
     var CONFIG = {"hostname":"loscecilia.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="小徐小徐，一条咸鱼">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Cecilia&#39;s blog">
-<meta property="og:url" content="https://loscecilia.github.io/index.html">
+  <meta name="description" content="Webpack是什么Webpack是一种前端资源构建工具，一个静态模块打包器（module bundler）。在Webpack看来，前端的所有资源文件（js&#x2F;json&#x2F;css&#x2F;img&#x2F;less&#x2F;…）都会作为模块处理。它将根据模块的依赖关系进行静态分析，打包生成对应的静态资源（bundle）。 Webpack 五个核心概念Entry入口（Entry）指示Webpack以哪个文件为入口起点开始打包，分">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Webpack初探">
+<meta property="og:url" content="https://loscecilia.github.io/2020/07/27/Webpack%E5%88%9D%E6%8E%A2/index.html">
 <meta property="og:site_name" content="Cecilia&#39;s blog">
-<meta property="og:description" content="小徐小徐，一条咸鱼">
+<meta property="og:description" content="Webpack是什么Webpack是一种前端资源构建工具，一个静态模块打包器（module bundler）。在Webpack看来，前端的所有资源文件（js&#x2F;json&#x2F;css&#x2F;img&#x2F;less&#x2F;…）都会作为模块处理。它将根据模块的依赖关系进行静态分析，打包生成对应的静态资源（bundle）。 Webpack 五个核心概念Entry入口（Entry）指示Webpack以哪个文件为入口起点开始打包，分">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200329133033421.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkzNDgxNg==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200329140951863.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkzNDgxNg==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200329190412568.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkzNDgxNg==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200329190055551.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkzNDgxNg==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2020032919010392.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkzNDgxNg==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200329190727225.PNG">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200329190738385.PNG">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200329190747305.PNG">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200329194653108.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkzNDgxNg==,size_16,color_FFFFFF,t_70">
+<meta property="article:published_time" content="2020-07-27T12:48:23.000Z">
+<meta property="article:modified_time" content="2020-07-27T12:48:45.294Z">
 <meta property="article:author" content="Cecilia">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200329133033421.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkzNDgxNg==,size_16,color_FFFFFF,t_70">
 
-<link rel="canonical" href="https://loscecilia.github.io/">
+<link rel="canonical" href="https://loscecilia.github.io/2020/07/27/Webpack%E5%88%9D%E6%8E%A2/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Cecilia's blog</title>
+  <title>Webpack初探 | Cecilia's blog</title>
   
 
 
@@ -142,9 +154,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
@@ -160,10 +173,9 @@
       <meta itemprop="name" content="Cecilia's blog">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/07/27/Webpack%E5%88%9D%E6%8E%A2/" class="post-title-link" itemprop="url">Webpack初探</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Webpack初探
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -187,7 +199,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="Webpack是什么"><a href="#Webpack是什么" class="headerlink" title="Webpack是什么"></a>Webpack是什么</h3><p>Webpack是一种前端资源构建工具，一个静态模块打包器（module bundler）。在Webpack看来，前端的所有资源文件（js/json/css/img/less/…）都会作为模块处理。它将根据模块的依赖关系进行静态分析，打包生成对应的静态资源（bundle）。<br><img src="https://img-blog.csdnimg.cn/20200329133033421.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkzNDgxNg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+        <h3 id="Webpack是什么"><a href="#Webpack是什么" class="headerlink" title="Webpack是什么"></a>Webpack是什么</h3><p>Webpack是一种前端资源构建工具，一个静态模块打包器（module bundler）。在Webpack看来，前端的所有资源文件（js/json/css/img/less/…）都会作为模块处理。它将根据模块的依赖关系进行静态分析，打包生成对应的静态资源（bundle）。<br><img src="https://img-blog.csdnimg.cn/20200329133033421.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkzNDgxNg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 <h3 id="Webpack-五个核心概念"><a href="#Webpack-五个核心概念" class="headerlink" title="Webpack 五个核心概念"></a>Webpack 五个核心概念</h3><h4 id="Entry"><a href="#Entry" class="headerlink" title="Entry"></a>Entry</h4><p>入口（Entry）指示Webpack以哪个文件为入口起点开始打包，分析构建内部依赖图。</p>
 <h4 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h4><p>输出（Output）指示Webpack打包后的资源bundles输出到哪里去，以及如何命名。</p>
 <h4 id="Loader"><a href="#Loader" class="headerlink" title="Loader"></a>Loader</h4><p>Loader让Webpack能够去处理那些非JavaScript文件（Webpack自身只能理解JavaScript）。</p>
@@ -277,91 +289,30 @@
 <li>启动devServer：<br><code>npx webpack-dev-server</code></li>
 </ol>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://loscecilia.github.io/2020/07/23/hello-world/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Cecilia">
-      <meta itemprop="description" content="小徐小徐，一条咸鱼">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Cecilia's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/07/23/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-07-23 10:55:50" itemprop="dateCreated datePublished" datetime="2020-07-23T10:55:50+08:00">2020-07-23</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/07/23/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -414,6 +365,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Webpack是什么"><span class="nav-number">1.</span> <span class="nav-text">Webpack是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Webpack-五个核心概念"><span class="nav-number">2.</span> <span class="nav-text">Webpack 五个核心概念</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Entry"><span class="nav-number">2.1.</span> <span class="nav-text">Entry</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Output"><span class="nav-number">2.2.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Loader"><span class="nav-number">2.3.</span> <span class="nav-text">Loader</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Plugins"><span class="nav-number">2.4.</span> <span class="nav-text">Plugins</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Mode"><span class="nav-number">2.5.</span> <span class="nav-text">Mode</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Webpack初试"><span class="nav-number">3.</span> <span class="nav-text">Webpack初试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Webpack基本配置"><span class="nav-number">4.</span> <span class="nav-text">Webpack基本配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打包样式资源"><span class="nav-number">5.</span> <span class="nav-text">打包样式资源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打包html资源"><span class="nav-number">6.</span> <span class="nav-text">打包html资源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打包图片资源"><span class="nav-number">7.</span> <span class="nav-text">打包图片资源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打包其他资源"><span class="nav-number">8.</span> <span class="nav-text">打包其他资源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#devServer"><span class="nav-number">9.</span> <span class="nav-text">devServer</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
