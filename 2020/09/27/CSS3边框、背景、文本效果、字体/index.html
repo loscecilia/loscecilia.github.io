@@ -20,18 +20,19 @@
     var CONFIG = {"hostname":"loscecilia.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="CSS3边框 圆角边框：border-radius1234567div&amp;#123;    border: 1px solid #000;    border-top-left-radius: 10px;    border-top-right-radius: 1em;    border-bottom-right-radius: 5%;    border-bottom-left-radius:">
+  <meta name="description" content="CSS3边框 圆角边框：border-radius 1234567div&amp;#123;    border: 1px solid #000;    border-top-left-radius: 10px;    border-top-right-radius: 1em;    border-bottom-right-radius: 5%;    border-bottom-left-radius:">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CSS3边框、背景、文本效果、字体">
 <meta property="og:url" content="https://loscecilia.github.io/2020/09/27/CSS3%E8%BE%B9%E6%A1%86%E3%80%81%E8%83%8C%E6%99%AF%E3%80%81%E6%96%87%E6%9C%AC%E6%95%88%E6%9E%9C%E3%80%81%E5%AD%97%E4%BD%93/index.html">
 <meta property="og:site_name" content="Cecilia&#39;s blog">
-<meta property="og:description" content="CSS3边框 圆角边框：border-radius1234567div&amp;#123;    border: 1px solid #000;    border-top-left-radius: 10px;    border-top-right-radius: 1em;    border-bottom-right-radius: 5%;    border-bottom-left-radius:">
+<meta property="og:description" content="CSS3边框 圆角边框：border-radius 1234567div&amp;#123;    border: 1px solid #000;    border-top-left-radius: 10px;    border-top-right-radius: 1em;    border-bottom-right-radius: 5%;    border-bottom-left-radius:">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xNTI1MTI1MS1lNmViNDAzNGJhYTNjNDFiLmdpZg">
 <meta property="article:published_time" content="2020-09-27T14:05:38.000Z">
-<meta property="article:modified_time" content="2020-09-27T14:06:23.474Z">
+<meta property="article:modified_time" content="2020-09-27T14:34:29.339Z">
 <meta property="article:author" content="Cecilia">
-<meta property="article:tag" content="CSS CSS3">
+<meta property="article:tag" content="CSS">
+<meta property="article:tag" content="CSS3">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xNTI1MTI1MS1lNmViNDAzNGJhYTNjNDFiLmdpZg">
 
@@ -193,7 +194,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-09-27 22:05:38 / Modified: 22:06:23" itemprop="dateCreated datePublished" datetime="2020-09-27T22:05:38+08:00">2020-09-27</time>
+              <time title="Created: 2020-09-27 22:05:38 / Modified: 22:34:29" itemprop="dateCreated datePublished" datetime="2020-09-27T22:05:38+08:00">2020-09-27</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -201,7 +202,11 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CSS-CSS3/" itemprop="url" rel="index"><span itemprop="name">CSS CSS3</span></a>
+                  <a href="/categories/CSS/" itemprop="url" rel="index"><span itemprop="name">CSS</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CSS/CSS3/" itemprop="url" rel="index"><span itemprop="name">CSS3</span></a>
                 </span>
             </span>
 
@@ -224,8 +229,12 @@
 
       
         <h2 id="CSS3边框"><a href="#CSS3边框" class="headerlink" title="CSS3边框"></a>CSS3边框</h2><ol>
-<li>圆角边框：border-radius<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#000</span>;</span><br><span class="line">    <span class="attribute">border-top-left-radius</span>: <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">border-top-right-radius</span>: <span class="number">1em</span>;</span><br><span class="line">    <span class="attribute">border-bottom-right-radius</span>: <span class="number">5%</span>;</span><br><span class="line">    <span class="attribute">border-bottom-left-radius</span>: <span class="number">5px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>边框阴影：box-shadow<br>语法：box-shadow: h-shadow v-shadow blur spread color inset;</li>
+<li><p>圆角边框：border-radius</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#000</span>;</span><br><span class="line">    <span class="attribute">border-top-left-radius</span>: <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">border-top-right-radius</span>: <span class="number">1em</span>;</span><br><span class="line">    <span class="attribute">border-bottom-right-radius</span>: <span class="number">5%</span>;</span><br><span class="line">    <span class="attribute">border-bottom-left-radius</span>: <span class="number">5px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>边框阴影：box-shadow</p>
+<p> 语法：box-shadow: h-shadow v-shadow blur spread color inset;</p>
+</li>
 </ol>
 <table>
 <thead>
@@ -258,15 +267,13 @@
 <td align="center">inset</td>
 <td align="center">可选。将外部阴影 (outset) 改为内部阴影。</td>
 </tr>
-<tr>
-<td align="center"><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">     <span class="attribute">box-shadow</span>: <span class="number">10px</span> <span class="number">10px</span> <span class="number">5px</span> <span class="number">#888888</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">3. 边框图片：border-image</td>
-<td align="center"></td>
-</tr>
 </tbody></table>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">     <span class="attribute">box-shadow</span>: <span class="number">10px</span> <span class="number">10px</span> <span class="number">5px</span> <span class="number">#888888</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<ol start="3">
+<li>边框图片：border-image</li>
+</ol>
 <table>
 <thead>
 <tr>
@@ -294,87 +301,35 @@
 <td align="center">border-image-repeat</td>
 <td align="center">图像边框是否应平铺(repeated)、铺满(rounded)或拉伸(stretched)。</td>
 </tr>
-<tr>
-<td align="center"><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">-moz-border-image</span>: <span class="built_in">url</span>(/i/border.png) <span class="number">30</span> <span class="number">30</span> round;	<span class="comment">/* Old Firefox */</span></span><br><span class="line">    <span class="attribute">-webkit-border-image</span>: <span class="built_in">url</span>(/i/border.png) <span class="number">30</span> <span class="number">30</span> round;	<span class="comment">/* Safari and Chrome */</span></span><br><span class="line">    <span class="attribute">-o-border-image</span>: <span class="built_in">url</span>(/i/border.png) <span class="number">30</span> <span class="number">30</span> round;		<span class="comment">/* Opera */</span></span><br><span class="line">    <span class="attribute">border-image</span>: <span class="built_in">url</span>(/i/border.png) <span class="number">30</span> <span class="number">30</span> round;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">———–</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">## CSS3背景</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">1. background-size：</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">background-size 属性规定背景图片的尺寸。</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">可以以像素或百分比规定尺寸。如果以百分比规定尺寸，那么尺寸相对于父元素的宽度和高度。</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center"><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">url</span>(bg_flower.gif);</span><br><span class="line">    <span class="attribute">background-size</span>: <span class="number">63px</span> <span class="number">100px</span>;       <span class="comment">/*用像素规定尺寸*/</span></span><br><span class="line">    <span class="comment">/*background-size: 40% 100%;*/</span>   <span class="comment">/*用百分比规定尺寸*/</span></span><br><span class="line">    <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">2. background-origin：</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">background-origin 属性规定背景图片的定位区域。</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">背景图片可以放置于 content-box、padding-box 或 border-box 区域。</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center"><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xNTI1MTI1MS1lNmViNDAzNGJhYTNjNDFiLmdpZg" alt=""></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center"><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">url</span>(bg.gif);</span><br><span class="line">    <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">    <span class="attribute">background-size</span>: <span class="number">100%</span> <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">background-origin</span>: content-box;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">3. 多重背景图片：</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">CSS3 允许为元素使用多个背景图像。</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center"><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123; </span><br><span class="line">    <span class="attribute">background-image</span>: <span class="built_in">url</span>(bg1.gif),<span class="built_in">url</span>(bg2.gif);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">———-</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">## CSS3文本效果</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">1. 文本阴影：text-shadow</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">语法：text-shadow: h-shadow v-shadow blur color;</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">可以规定水平阴影、垂直阴影、模糊距离，以及阴影的颜色。</td>
-<td align="center"></td>
-</tr>
 </tbody></table>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">-moz-border-image</span>: <span class="built_in">url</span>(/i/border.png) <span class="number">30</span> <span class="number">30</span> round;	<span class="comment">/* Old Firefox */</span></span><br><span class="line">    <span class="attribute">-webkit-border-image</span>: <span class="built_in">url</span>(/i/border.png) <span class="number">30</span> <span class="number">30</span> round;	<span class="comment">/* Safari and Chrome */</span></span><br><span class="line">    <span class="attribute">-o-border-image</span>: <span class="built_in">url</span>(/i/border.png) <span class="number">30</span> <span class="number">30</span> round;		<span class="comment">/* Opera */</span></span><br><span class="line">    <span class="attribute">border-image</span>: <span class="built_in">url</span>(/i/border.png) <span class="number">30</span> <span class="number">30</span> round;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<hr>
+<h2 id="CSS3背景"><a href="#CSS3背景" class="headerlink" title="CSS3背景"></a>CSS3背景</h2><ol>
+<li>background-size：<br> background-size 属性规定背景图片的尺寸。<br> 可以以像素或百分比规定尺寸。如果以百分比规定尺寸，那么尺寸相对于父元素的宽度和高度。</li>
+</ol>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">url</span>(bg_flower.gif);</span><br><span class="line">    <span class="attribute">background-size</span>: <span class="number">63px</span> <span class="number">100px</span>;       <span class="comment">/*用像素规定尺寸*/</span></span><br><span class="line">    <span class="comment">/*background-size: 40% 100%;*/</span>   <span class="comment">/*用百分比规定尺寸*/</span></span><br><span class="line">    <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>background-origin：<br> background-origin 属性规定背景图片的定位区域。<br> 背景图片可以放置于 content-box、padding-box 或 border-box 区域。<br><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xNTI1MTI1MS1lNmViNDAzNGJhYTNjNDFiLmdpZg" alt=""></li>
+</ol>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">url</span>(bg.gif);</span><br><span class="line">    <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">    <span class="attribute">background-size</span>: <span class="number">100%</span> <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">background-origin</span>: content-box;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>多重背景图片：<br> CSS3 允许为元素使用多个背景图像。</li>
+</ol>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123; </span><br><span class="line">    <span class="attribute">background-image</span>: <span class="built_in">url</span>(bg1.gif),<span class="built_in">url</span>(bg2.gif);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h2 id="CSS3文本效果"><a href="#CSS3文本效果" class="headerlink" title="CSS3文本效果"></a>CSS3文本效果</h2><ol>
+<li>文本阴影：text-shadow<br> 语法：text-shadow: h-shadow v-shadow blur color;<br> 可以规定水平阴影、垂直阴影、模糊距离，以及阴影的颜色。</li>
+</ol>
 <table>
 <thead>
 <tr>
@@ -398,35 +353,16 @@
 <td align="center"><em>color</em></td>
 <td align="center">可选。阴影的颜色。</td>
 </tr>
-<tr>
-<td align="center"><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h1</span>&#123;</span><br><span class="line">    <span class="attribute">text-shadow</span>: <span class="number">5px</span> <span class="number">5px</span> <span class="number">5px</span> <span class="number">#FF0000</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">2.自动换行：word-warp</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">语法：word-wrap: normal</td>
-<td align="center">break-word;</td>
-</tr>
-<tr>
-<td align="center">word-wrap 属性允许长单词或 URL 地址换行到下一行。</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center"><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">    <span class="attribute">word-wrap</span>:break-word;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">3. 文本溢出省略号：text-overflow</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">语法：text-overflow: clip</td>
-<td align="center">ellipsis</td>
-</tr>
 </tbody></table>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h1</span>&#123;</span><br><span class="line">    <span class="attribute">text-shadow</span>: <span class="number">5px</span> <span class="number">5px</span> <span class="number">5px</span> <span class="number">#FF0000</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>自动换行：word-warp<br> 语法：word-wrap: normal | break-word;<br> word-wrap 属性允许长单词或 URL 地址换行到下一行。</li>
+</ol>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">    <span class="attribute">word-wrap</span>:break-word;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>文本溢出省略号：text-overflow<br> 语法：text-overflow: clip | ellipsis | string;</li>
+</ol>
 <table>
 <thead>
 <tr>
@@ -446,32 +382,17 @@
 <td align="center"><em>string</em></td>
 <td align="center">使用给定的字符串来代表被修剪的文本。</td>
 </tr>
-<tr>
-<td align="center"><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*单行文本*/</span></span><br><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#000000</span>;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">white-space</span>: nowrap;    <span class="comment">/*规定段落中的文本不进行换行*/</span></span><br><span class="line">    <span class="attribute">overflow</span>: hidden; </span><br><span class="line">    <span class="attribute">text-overflow</span>: ellipsis;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*多行文本*/</span></span><br><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#000000</span>;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;</span><br><span class="line">    <span class="attribute">text-overflow</span>: ellipsis;</span><br><span class="line">    <span class="attribute">display</span>: -webkit-box;    <span class="comment">/*将对象作为弹性伸缩盒子模型显示*/</span></span><br><span class="line">    <span class="attribute">-webkit-box-orient</span>: vertical;    <span class="comment">/*设置或检索伸缩盒对象的子元素的排列方式*/</span></span><br><span class="line">    <span class="attribute">-webkit-line-clamp</span>: <span class="number">3</span>;    <span class="comment">/*用来限制在一个块元素显示的文本的行数,是一个不规范的属性，没有出现在 CSS 规范草案中*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">———-</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">## CSS3字体</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">在 CSS3 @font-face 规则中定义“自己的”字体。</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">必须首先定义字体的名称（比如 myFirstFont），然后指向该字体文件。</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center"><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@font-face</span>&#123;</span><br><span class="line">    <span class="attribute">font-family</span>: myFirstFont;</span><br><span class="line">    <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'Sansation_Light.ttf'</span>),</span><br><span class="line">         <span class="built_in">url</span>(<span class="string">'Sansation_Light.eot'</span>); <span class="comment">/* IE9+ */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">font-family</span>:myFirstFont;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></td>
-<td align="center"></td>
-</tr>
 </tbody></table>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*单行文本*/</span></span><br><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#000000</span>;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">white-space</span>: nowrap;    <span class="comment">/*规定段落中的文本不进行换行*/</span></span><br><span class="line">    <span class="attribute">overflow</span>: hidden; </span><br><span class="line">    <span class="attribute">text-overflow</span>: ellipsis;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*多行文本*/</span></span><br><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#000000</span>;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;</span><br><span class="line">    <span class="attribute">text-overflow</span>: ellipsis;</span><br><span class="line">    <span class="attribute">display</span>: -webkit-box;    <span class="comment">/*将对象作为弹性伸缩盒子模型显示*/</span></span><br><span class="line">    <span class="attribute">-webkit-box-orient</span>: vertical;    <span class="comment">/*设置或检索伸缩盒对象的子元素的排列方式*/</span></span><br><span class="line">    <span class="attribute">-webkit-line-clamp</span>: <span class="number">3</span>;    <span class="comment">/*用来限制在一个块元素显示的文本的行数,是一个不规范的属性，没有出现在 CSS 规范草案中*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+
+
+
+
+
+<hr>
+<h2 id="CSS3字体"><a href="#CSS3字体" class="headerlink" title="CSS3字体"></a>CSS3字体</h2><p>在 CSS3 @font-face 规则中定义“自己的”字体。<br>必须首先定义字体的名称（比如 myFirstFont），然后指向该字体文件。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@font-face</span>&#123;</span><br><span class="line">    <span class="attribute">font-family</span>: myFirstFont;</span><br><span class="line">    <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'Sansation_Light.ttf'</span>),</span><br><span class="line">         <span class="built_in">url</span>(<span class="string">'Sansation_Light.eot'</span>); <span class="comment">/* IE9+ */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">font-family</span>:myFirstFont;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -497,7 +418,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/CSS-CSS3/" rel="tag"># CSS CSS3</a>
+              <a href="/tags/CSS/" rel="tag"># CSS</a>
+              <a href="/tags/CSS3/" rel="tag"># CSS3</a>
           </div>
 
         
@@ -571,7 +493,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3边框"><span class="nav-number">1.</span> <span class="nav-text">CSS3边框</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3边框"><span class="nav-number">1.</span> <span class="nav-text">CSS3边框</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3背景"><span class="nav-number">2.</span> <span class="nav-text">CSS3背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3文本效果"><span class="nav-number">3.</span> <span class="nav-text">CSS3文本效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3字体"><span class="nav-number">4.</span> <span class="nav-text">CSS3字体</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

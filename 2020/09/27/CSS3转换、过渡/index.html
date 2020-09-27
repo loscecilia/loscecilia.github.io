@@ -28,9 +28,10 @@
 <meta property="og:description" content="2D转换 translate()通过 translate() 方法，元素从其当前位置移动，根据给定的 left（x 坐标） 和 top（y 坐标） 位置参数。（效果相当于定位）     函数 描述    translate(x,y) 定义 2D 转换，沿着 X 和 Y 轴移动元素。   translateX(n) 定义 2D 转换，沿着 X 轴移动元素。   translateY(n) 定义 2D">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-09-27T14:06:50.000Z">
-<meta property="article:modified_time" content="2020-09-27T14:08:09.061Z">
+<meta property="article:modified_time" content="2020-09-27T14:35:31.906Z">
 <meta property="article:author" content="Cecilia">
-<meta property="article:tag" content="CSS CSS3">
+<meta property="article:tag" content="CSS">
+<meta property="article:tag" content="CSS3">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://loscecilia.github.io/2020/09/27/CSS3%E8%BD%AC%E6%8D%A2%E3%80%81%E8%BF%87%E6%B8%A1/">
@@ -191,7 +192,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-09-27 22:06:50 / Modified: 22:08:09" itemprop="dateCreated datePublished" datetime="2020-09-27T22:06:50+08:00">2020-09-27</time>
+              <time title="Created: 2020-09-27 22:06:50 / Modified: 22:35:31" itemprop="dateCreated datePublished" datetime="2020-09-27T22:06:50+08:00">2020-09-27</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -199,7 +200,11 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CSS-CSS3/" itemprop="url" rel="index"><span itemprop="name">CSS CSS3</span></a>
+                  <a href="/categories/CSS/" itemprop="url" rel="index"><span itemprop="name">CSS</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CSS/CSS3/" itemprop="url" rel="index"><span itemprop="name">CSS3</span></a>
                 </span>
             </span>
 
@@ -243,35 +248,17 @@
 <td align="center">translateY(n)</td>
 <td align="center">定义 2D 转换，沿着 Y 轴移动元素。</td>
 </tr>
-<tr>
-<td align="center"><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">translate</span>(<span class="number">50px</span>,<span class="number">100px</span>);</span><br><span class="line">    <span class="attribute">-ms-transform</span>: <span class="built_in">translate</span>(<span class="number">50px</span>,<span class="number">100px</span>);		<span class="comment">/* IE 9 */</span></span><br><span class="line">    <span class="attribute">-webkit-transform</span>: <span class="built_in">translate</span>(<span class="number">50px</span>,<span class="number">100px</span>);	<span class="comment">/* Safari and Chrome */</span></span><br><span class="line">    <span class="attribute">-o-transform</span>: <span class="built_in">translate</span>(<span class="number">50px</span>,<span class="number">100px</span>);		<span class="comment">/* Opera */</span></span><br><span class="line">    <span class="attribute">-moz-transform</span>: <span class="built_in">translate</span>(<span class="number">50px</span>,<span class="number">100px</span>);		<span class="comment">/* Firefox */</span></span><br><span class="line">    <span class="comment">/*值 translate(50px,100px) 把元素从左侧移动 50 像素，从顶端移动 100 像素*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">2. rotate()</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">rotate(deg)</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">通过 rotate() 方法，元素顺时针旋转给定的角度。允许负值，元素将逆时针旋转。</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center"><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">30deg</span>);</span><br><span class="line">    <span class="attribute">-ms-transform</span>: <span class="built_in">rotate</span>(<span class="number">30deg</span>);		<span class="comment">/* IE 9 */</span></span><br><span class="line">    <span class="attribute">-webkit-transform</span>: <span class="built_in">rotate</span>(<span class="number">30deg</span>);	<span class="comment">/* Safari and Chrome */</span></span><br><span class="line">    <span class="attribute">-o-transform</span>: <span class="built_in">rotate</span>(<span class="number">30deg</span>);		<span class="comment">/* Opera */</span></span><br><span class="line">    <span class="attribute">-moz-transform</span>: <span class="built_in">rotate</span>(<span class="number">30deg</span>);		<span class="comment">/* Firefox */</span></span><br><span class="line">    <span class="comment">/*值 rotate(30deg) 把元素顺时针旋转 30 度*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">3. scale()</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">通过 scale() 方法，元素的尺寸会增加或减少，根据给定的宽度（X 轴）和高度（Y 轴）参数。</td>
-<td align="center"></td>
-</tr>
 </tbody></table>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">translate</span>(<span class="number">50px</span>,<span class="number">100px</span>);</span><br><span class="line">    <span class="attribute">-ms-transform</span>: <span class="built_in">translate</span>(<span class="number">50px</span>,<span class="number">100px</span>);		<span class="comment">/* IE 9 */</span></span><br><span class="line">    <span class="attribute">-webkit-transform</span>: <span class="built_in">translate</span>(<span class="number">50px</span>,<span class="number">100px</span>);	<span class="comment">/* Safari and Chrome */</span></span><br><span class="line">    <span class="attribute">-o-transform</span>: <span class="built_in">translate</span>(<span class="number">50px</span>,<span class="number">100px</span>);		<span class="comment">/* Opera */</span></span><br><span class="line">    <span class="attribute">-moz-transform</span>: <span class="built_in">translate</span>(<span class="number">50px</span>,<span class="number">100px</span>);		<span class="comment">/* Firefox */</span></span><br><span class="line">    <span class="comment">/*值 translate(50px,100px) 把元素从左侧移动 50 像素，从顶端移动 100 像素*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>rotate()<br>rotate(deg)<br>通过 rotate() 方法，元素顺时针旋转给定的角度。允许负值，元素将逆时针旋转。</li>
+</ol>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">30deg</span>);</span><br><span class="line">    <span class="attribute">-ms-transform</span>: <span class="built_in">rotate</span>(<span class="number">30deg</span>);		<span class="comment">/* IE 9 */</span></span><br><span class="line">    <span class="attribute">-webkit-transform</span>: <span class="built_in">rotate</span>(<span class="number">30deg</span>);	<span class="comment">/* Safari and Chrome */</span></span><br><span class="line">    <span class="attribute">-o-transform</span>: <span class="built_in">rotate</span>(<span class="number">30deg</span>);		<span class="comment">/* Opera */</span></span><br><span class="line">    <span class="attribute">-moz-transform</span>: <span class="built_in">rotate</span>(<span class="number">30deg</span>);		<span class="comment">/* Firefox */</span></span><br><span class="line">    <span class="comment">/*值 rotate(30deg) 把元素顺时针旋转 30 度*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>scale()<br>通过 scale() 方法，元素的尺寸会增加或减少，根据给定的宽度（X 轴）和高度（Y 轴）参数。</li>
+</ol>
 <table>
 <thead>
 <tr>
@@ -291,19 +278,12 @@
 <td align="center">scaleY(n)</td>
 <td align="center">定义 2D 缩放转换，改变元素的高度。</td>
 </tr>
-<tr>
-<td align="center"><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">scale</span>(<span class="number">2</span>,<span class="number">4</span>);</span><br><span class="line">    <span class="attribute">-ms-transform</span>: <span class="built_in">scale</span>(<span class="number">2</span>,<span class="number">4</span>);	<span class="comment">/* IE 9 */</span></span><br><span class="line">    <span class="attribute">-webkit-transform</span>: <span class="built_in">scale</span>(<span class="number">2</span>,<span class="number">4</span>);	<span class="comment">/* Safari 和 Chrome */</span></span><br><span class="line">    <span class="attribute">-o-transform</span>: <span class="built_in">scale</span>(<span class="number">2</span>,<span class="number">4</span>);	<span class="comment">/* Opera */</span></span><br><span class="line">    <span class="attribute">-moz-transform</span>: <span class="built_in">scale</span>(<span class="number">2</span>,<span class="number">4</span>);	<span class="comment">/* Firefox */</span></span><br><span class="line">    <span class="comment">/*值 scale(2,4) 把宽度转换为原始尺寸的 2 倍，把高度转换为原始高度的 4 倍*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">4. skew()</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">通过 skew() 方法，元素翻转给定的角度，根据给定的水平线（X 轴）和垂直线（Y 轴）参数。</td>
-<td align="center"></td>
-</tr>
 </tbody></table>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">scale</span>(<span class="number">2</span>,<span class="number">4</span>);</span><br><span class="line">    <span class="attribute">-ms-transform</span>: <span class="built_in">scale</span>(<span class="number">2</span>,<span class="number">4</span>);	<span class="comment">/* IE 9 */</span></span><br><span class="line">    <span class="attribute">-webkit-transform</span>: <span class="built_in">scale</span>(<span class="number">2</span>,<span class="number">4</span>);	<span class="comment">/* Safari 和 Chrome */</span></span><br><span class="line">    <span class="attribute">-o-transform</span>: <span class="built_in">scale</span>(<span class="number">2</span>,<span class="number">4</span>);	<span class="comment">/* Opera */</span></span><br><span class="line">    <span class="attribute">-moz-transform</span>: <span class="built_in">scale</span>(<span class="number">2</span>,<span class="number">4</span>);	<span class="comment">/* Firefox */</span></span><br><span class="line">    <span class="comment">/*值 scale(2,4) 把宽度转换为原始尺寸的 2 倍，把高度转换为原始高度的 4 倍*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>skew()<br>通过 skew() 方法，元素翻转给定的角度，根据给定的水平线（X 轴）和垂直线（Y 轴）参数。</li>
+</ol>
 <table>
 <thead>
 <tr>
@@ -323,23 +303,12 @@
 <td align="center">skewY(angle)</td>
 <td align="center">定义 2D 倾斜转换，沿着 Y 轴。</td>
 </tr>
-<tr>
-<td align="center"><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">skew</span>(<span class="number">30deg</span>,<span class="number">20deg</span>);</span><br><span class="line">    <span class="attribute">-ms-transform</span>: <span class="built_in">skew</span>(<span class="number">30deg</span>,<span class="number">20deg</span>);	<span class="comment">/* IE 9 */</span></span><br><span class="line">    <span class="attribute">-webkit-transform</span>: <span class="built_in">skew</span>(<span class="number">30deg</span>,<span class="number">20deg</span>);	<span class="comment">/* Safari and Chrome */</span></span><br><span class="line">    <span class="attribute">-o-transform</span>: <span class="built_in">skew</span>(<span class="number">30deg</span>,<span class="number">20deg</span>);	<span class="comment">/* Opera */</span></span><br><span class="line">    <span class="attribute">-moz-transform</span>: <span class="built_in">skew</span>(<span class="number">30deg</span>,<span class="number">20deg</span>);	<span class="comment">/* Firefox */</span></span><br><span class="line">    <span class="comment">/*值 skew(30deg,20deg) 围绕 X 轴把元素翻转 30 度，围绕 Y 轴翻转 20 度。*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">5. matrix()</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">matrix() 方法把所有 2D 转换方法组合在一起。</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">matrix() 方法需要六个参数，包含数学函数，允许您：旋转、缩放、移动以及倾斜元素。</td>
-<td align="center"></td>
-</tr>
 </tbody></table>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">skew</span>(<span class="number">30deg</span>,<span class="number">20deg</span>);</span><br><span class="line">    <span class="attribute">-ms-transform</span>: <span class="built_in">skew</span>(<span class="number">30deg</span>,<span class="number">20deg</span>);	<span class="comment">/* IE 9 */</span></span><br><span class="line">    <span class="attribute">-webkit-transform</span>: <span class="built_in">skew</span>(<span class="number">30deg</span>,<span class="number">20deg</span>);	<span class="comment">/* Safari and Chrome */</span></span><br><span class="line">    <span class="attribute">-o-transform</span>: <span class="built_in">skew</span>(<span class="number">30deg</span>,<span class="number">20deg</span>);	<span class="comment">/* Opera */</span></span><br><span class="line">    <span class="attribute">-moz-transform</span>: <span class="built_in">skew</span>(<span class="number">30deg</span>,<span class="number">20deg</span>);	<span class="comment">/* Firefox */</span></span><br><span class="line">    <span class="comment">/*值 skew(30deg,20deg) 围绕 X 轴把元素翻转 30 度，围绕 Y 轴翻转 20 度。*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>matrix()<br>matrix() 方法把所有 2D 转换方法组合在一起。<br>matrix() 方法需要六个参数，包含数学函数，允许您：旋转、缩放、移动以及倾斜元素。</li>
+</ol>
 
     </div>
 
@@ -366,7 +335,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/CSS-CSS3/" rel="tag"># CSS CSS3</a>
+              <a href="/tags/CSS/" rel="tag"># CSS</a>
+              <a href="/tags/CSS3/" rel="tag"># CSS3</a>
           </div>
 
         

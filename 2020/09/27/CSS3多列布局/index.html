@@ -20,17 +20,18 @@
     var CONFIG = {"hostname":"loscecilia.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="columns属性是一个复合属性——列宽（column-width）和列数（column-count），可以同时定义多列的列数和每列的列宽。  columns: column-width || column-count  column-width：定义多列种每列的宽度。 column-count：定义多列中的列数。   column-width属性类似于给列定义一个最小宽度（min-width）">
+  <meta name="description" content="columns属性是一个复合属性——列宽（column-width）和列数（column-count），可以同时定义多列的列数和每列的列宽。 columns: column-width || column-count  column-width：定义多列种每列的宽度。 column-count：定义多列中的列数。     column-width属性类似于给列定义一个最小宽度（min-width">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CSS3多列布局">
 <meta property="og:url" content="https://loscecilia.github.io/2020/09/27/CSS3%E5%A4%9A%E5%88%97%E5%B8%83%E5%B1%80/index.html">
 <meta property="og:site_name" content="Cecilia&#39;s blog">
-<meta property="og:description" content="columns属性是一个复合属性——列宽（column-width）和列数（column-count），可以同时定义多列的列数和每列的列宽。  columns: column-width || column-count  column-width：定义多列种每列的宽度。 column-count：定义多列中的列数。   column-width属性类似于给列定义一个最小宽度（min-width）">
+<meta property="og:description" content="columns属性是一个复合属性——列宽（column-width）和列数（column-count），可以同时定义多列的列数和每列的列宽。 columns: column-width || column-count  column-width：定义多列种每列的宽度。 column-count：定义多列中的列数。     column-width属性类似于给列定义一个最小宽度（min-width">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-09-27T14:03:55.000Z">
-<meta property="article:modified_time" content="2020-09-27T14:04:54.521Z">
+<meta property="article:modified_time" content="2020-09-27T14:29:33.756Z">
 <meta property="article:author" content="Cecilia">
-<meta property="article:tag" content="CSS CSS3">
+<meta property="article:tag" content="CSS">
+<meta property="article:tag" content="CSS3">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://loscecilia.github.io/2020/09/27/CSS3%E5%A4%9A%E5%88%97%E5%B8%83%E5%B1%80/">
@@ -191,7 +192,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-09-27 22:03:55 / Modified: 22:04:54" itemprop="dateCreated datePublished" datetime="2020-09-27T22:03:55+08:00">2020-09-27</time>
+              <time title="Created: 2020-09-27 22:03:55 / Modified: 22:29:33" itemprop="dateCreated datePublished" datetime="2020-09-27T22:03:55+08:00">2020-09-27</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -199,7 +200,11 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CSS-CSS3/" itemprop="url" rel="index"><span itemprop="name">CSS CSS3</span></a>
+                  <a href="/categories/CSS/" itemprop="url" rel="index"><span itemprop="name">CSS</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CSS/CSS3/" itemprop="url" rel="index"><span itemprop="name">CSS3</span></a>
                 </span>
             </span>
 
@@ -222,65 +227,58 @@
 
       
         <ol>
-<li>columns属性是一个复合属性——列宽（column-width）和列数（column-count），可以同时定义多列的列数和每列的列宽。</li>
-</ol>
-<p><strong>columns: column-width || column-count</strong></p>
+<li><p>columns属性是一个复合属性——列宽（column-width）和列数（column-count），可以同时定义多列的列数和每列的列宽。<br> <strong>columns: column-width || column-count</strong></p>
 <ul>
 <li>column-width：定义多列种每列的宽度。</li>
 <li>column-count：定义多列中的列数。</li>
 </ul>
-<ol start="2">
-<li>column-width属性类似于给列定义一个最小宽度（min-width）。</li>
+</li>
 </ol>
-<p><strong>column-width: auto | &lt;length&gt;</strong></p>
+<ol start="2">
+<li><p>column-width属性类似于给列定义一个最小宽度（min-width）。<br> <strong>column-width: auto | &lt;length&gt;</strong></p>
 <ul>
 <li>auto：默认值，如果值为auto或者没有显示设置值时，元素多列的列宽将有其他属性来决定。</li>
-<li>&lt;length&gt;：使用固定值来设置元素列的宽度，其主要是由数值和长度单位组成，不过其值只能时正值，不能为负值。<br><strong>column-width单独使用时，当容器超出列宽时，会以多列显示，反之容器宽度小与设置的列宽时，容器将只显示为一列。</strong></li>
+<li>&lt;length&gt;：使用固定值来设置元素列的宽度，其主要是由数值和长度单位组成，不过其值只能时正值，不能为负值。</li>
 </ul>
-<ol start="3">
-<li>column-count属性主要用来给元素指定想要的列数和允许的最大列数。</li>
-</ol>
-<p><strong>column-count: auto | &lt;integer&gt;</strong></p>
+<p> <strong>column-width单独使用时，当容器超出列宽时，会以多列显示，反之容器宽度小与设置的列宽时，容器将只显示为一列。</strong></p>
+</li>
+<li><p>column-count属性主要用来给元素指定想要的列数和允许的最大列数。<br> <strong>column-count: auto | &lt;integer&gt;</strong></p>
 <ul>
 <li>auto：默认值，表示元素只有一列，其主要依靠浏览器计算自动设置。</li>
 <li>&lt;integer&gt;：正整数值，主要用来定义元素的列数，取值为大于0的整数，负值无效。</li>
 </ul>
-<p><strong>列数=（容器宽度-间距）/列间距</strong><br><strong>浏览器对所求列数的值是去余取整，且如果元素设置了列数，不管元素容器的宽度是多少或者间距多少，总是显示固定的列数。</strong></p>
-<ol start="4">
-<li>column-gap属性类似于盒模型中的margin一样，主要用来设置元素分列的列间距，其只能设置列与列之间的间距。</li>
-</ol>
-<p><strong>column-gap: normal | &lt;length&gt;</strong></p>
+<p> <strong>列数=（容器宽度-间距）/列间距</strong><br> <strong>浏览器对所求列数的值是去余取整，且如果元素设置了列数，不管元素容器的宽度是多少或者间距多少，总是显示固定的列数。</strong></p>
+</li>
+<li><p>column-gap属性类似于盒模型中的margin一样，主要用来设置元素分列的列间距，其只能设置列与列之间的间距。<br> <strong>column-gap: normal | &lt;length&gt;</strong></p>
 <ul>
 <li>normal：默认值，主要通过浏览器默认设置时行解析，一般情况下，normal值相当于1em。</li>
 <li>&lt;length&gt;：由浮点数字和单位标识符组成的长度值，主要用来设置列与列之间的距离，常用px、em单位的任何整数值，其值不能为负值。</li>
 </ul>
-<p><strong>column-gap可以用来改变相邻列之间距离，但在多列元素同时设置了column-width时，column-gap与column-width等参数之和大于多列元素总宽度时，会导致列被撑破，并将以当前列数减1的列数显示，此时列宽自动调节到适当的列宽。</strong></p>
-<ol start="5">
-<li>column-rule属性主要是用来定义列与列之间的边框宽度、边框样式和边框颜色，有些类似于常用的border属性，但column-rule是不占用任何空间位置的，在列与列之间改变其宽度不会改变任何列的位置。</li>
-</ol>
-<p><strong>column-rule: column-rule-width | column-rule-style | column-rule-color</strong></p>
+<p> <strong>column-gap可以用来改变相邻列之间距离，但在多列元素同时设置了column-width时，column-gap与column-width等参数之和大于多列元素总宽度时，会导致列被撑破，并将以当前列数减1的列数显示，此时列宽自动调节到适当的列宽。</strong></p>
+</li>
+<li><p>column-rule属性主要是用来定义列与列之间的边框宽度、边框样式和边框颜色，有些类似于常用的border属性，但column-rule是不占用任何空间位置的，在列与列之间改变其宽度不会改变任何列的位置。<br> <strong>column-rule: column-rule-width | column-rule-style | column-rule-color</strong></p>
 <ul>
 <li>column-rule-width：类似于border-width属性，主要用来定义列边框的宽度，其默认值为medium，该属性接受任意浮点数，但不接受负值。像border-width属性一样，可以使用款见此medium、thick和thin。</li>
 <li>column-rule-style：此值类似于border-style属性，主要用来定义列边框样式，其默认值为none。该属性值与border-style属性值相同，包括none、hidden、dotted、dashed、solid、double、groove、ridge、inset、outset。</li>
 <li>column-rule-color：此值类似于border-color属性，主要用来定义列边框颜色，其默认值为前景色color的值，使用时相当于border-color。该属性接受所有的颜色。如果不希望显示颜色，也可以将其值设置为transparent（透明色）。</li>
 </ul>
-<p><strong>column-rule-width增大并不会影响列的布局，其不占有任何空间位置。</strong><br><strong>column-rule在Z轴上是介于background和content之间，当column-rule-width宽度增加到超过列与列的间距时，列边框就会自动消失。</strong></p>
-<ol start="6">
-<li>column-span属性主要用来定义一个分列元素中的子元素能跨多少列，有时需要一段内容或一个标题不进行分列，也就是横跨所有列，就可以用该属性实现。</li>
-</ol>
-<p><strong>column-span: none | all</strong></p>
+<p> <strong>column-rule-width增大并不会影响列的布局，其不占有任何空间位置。</strong><br> <strong>column-rule在Z轴上是介于background和content之间，当column-rule-width宽度增加到超过列与列的间距时，列边框就会自动消失。</strong></p>
+</li>
+<li><p>column-span属性主要用来定义一个分列元素中的子元素能跨多少列，有时需要一段内容或一个标题不进行分列，也就是横跨所有列，就可以用该属性实现。<br> <strong>column-span: none | all</strong></p>
 <ul>
 <li>none：默认值，表示不跨越任何列。</li>
 <li>all：跟none值正好相反，表示的是跨越所有列，并定位在列的Z轴之上。</li>
 </ul>
-<ol start="7">
-<li>column-fill属性主要用来定义多列种每一列的高度是否统一。</li>
+</li>
 </ol>
-<p><strong>column-fill: auto | balance</strong></p>
+<ol start="7">
+<li><p>column-fill属性主要用来定义多列种每一列的高度是否统一。<br> <strong>column-fill: auto | balance</strong></p>
 <ul>
 <li>auto：默认值，各列的高度随其内容的变化自动变化。</li>
 <li>balance：各列的高度将会根据内容最多的一列的高度进行统一。</li>
 </ul>
+</li>
+</ol>
 
     </div>
 
@@ -307,7 +305,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/CSS-CSS3/" rel="tag"># CSS CSS3</a>
+              <a href="/tags/CSS/" rel="tag"># CSS</a>
+              <a href="/tags/CSS3/" rel="tag"># CSS3</a>
           </div>
 
         
