@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200314155552466.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkzNDgxNg==,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200314155624431.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkzNDgxNg==,size_16,color_FFFFFF,t_70">
 <meta property="article:published_time" content="2020-09-27T13:30:14.000Z">
-<meta property="article:modified_time" content="2020-09-27T13:51:37.347Z">
+<meta property="article:modified_time" content="2020-09-27T13:53:32.877Z">
 <meta property="article:author" content="Cecilia">
 <meta property="article:tag" content="CSS">
 <meta name="twitter:card" content="summary">
@@ -194,7 +194,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-09-27 21:30:14 / Modified: 21:51:37" itemprop="dateCreated datePublished" datetime="2020-09-27T21:30:14+08:00">2020-09-27</time>
+              <time title="Created: 2020-09-27 21:30:14 / Modified: 21:53:32" itemprop="dateCreated datePublished" datetime="2020-09-27T21:30:14+08:00">2020-09-27</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -262,9 +262,7 @@
 <p><strong>body默认的padding为8px</strong></p>
 <p><strong>要使内层盒子在外层盒子居中，设置相同的width和height，再将外层盒子的padding调大</strong></p>
 <hr>
-<h1 id="层模型"><a href="#层模型" class="headerlink" title="层模型"></a>层模型</h1><p>position: absolute | relative | fixed | sticky</p>
-<p><strong>值：left / right / top / bottom : 100px; （以px为单位）</strong></p>
-<ol>
+<h1 id="层模型"><a href="#层模型" class="headerlink" title="层模型"></a>层模型</h1><h4 id="position-absolute-relative-fixed-sticky"><a href="#position-absolute-relative-fixed-sticky" class="headerlink" title="position: absolute | relative | fixed | sticky"></a>position: absolute | relative | fixed | sticky</h4><h4 id="值：left-right-top-bottom-100px-（以px为单位）"><a href="#值：left-right-top-bottom-100px-（以px为单位）" class="headerlink" title="值：left / right / top / bottom : 100px; （以px为单位）"></a>值：left / right / top / bottom : 100px; （以px为单位）</h4><ol>
 <li><p>position: absolute（绝对定位）</p>
 <p> <strong>脱离原来位置进行定位（脱离层面）（不占空间）</strong></p>
 <p> <strong>absolute相对与最近的有定位的父级元素进行定位，如果没有，那么相对于文档进行定位</strong></p>
@@ -290,12 +288,10 @@
 
 <p>两栏布局：<br>一个div使用position: absolute属性，另一个div调整margin值为先前div的宽度。<br><strong>注意：先写position: absolute的div使它先出生</strong></p>
 <hr>
-<h1 id="浮动模型"><a href="#浮动模型" class="headerlink" title="浮动模型"></a>浮动模型</h1><p><strong>浮动：float: left / right ;</strong></p>
-<p>浮动元素产生了浮动流：</p>
+<h1 id="浮动模型"><a href="#浮动模型" class="headerlink" title="浮动模型"></a>浮动模型</h1><h4 id="浮动：float-left-right"><a href="#浮动：float-left-right" class="headerlink" title="浮动：float: left / right ;"></a>浮动：float: left / right ;</h4><p>浮动元素产生了浮动流：</p>
 <p>1.所有产生了浮动流的元素，块级元素看不到他们。</p>
 <p>2.产生了bfc的元素和文本类属性的元素（inline属性）以及文本都能看到浮动元素。</p>
-<p><strong>清除浮动流：clear: left / right / both ;</strong></p>
-<p>清除浮动流的方法：</p>
+<h4 id="清除浮动流：clear-left-right-both"><a href="#清除浮动流：clear-left-right-both" class="headerlink" title="清除浮动流：clear: left / right / both ;"></a>清除浮动流：clear: left / right / both ;</h4><p>清除浮动流的方法：</p>
 <p>1.在要清除的元素下面写一个p元素，给其添加clear属性清除浮动流，使p元素撑开容器（即撑开父元素）。（一般不建议采用）</p>
 <p>2.伪元素：利用伪元素如 <strong>E::before</strong> 来清除浮动。</p>
 <p><strong>注意：在伪元素种要添加 content:” “; 属性才能生效，且clear属性只能应用于块级元素，要先将伪元素利用display属性变为block，再用clear属性清除浮动。</strong></p>
@@ -412,7 +408,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#盒模型"><span class="nav-number">1.</span> <span class="nav-text">盒模型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#两种盒模型"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">两种盒模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#box-sizing属性的语法及参数"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">box-sizing属性的语法及参数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#盒模型的margin与padding："><span class="nav-number">1.0.0.3.</span> <span class="nav-text">盒模型的margin与padding：</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#层模型"><span class="nav-number">2.</span> <span class="nav-text">层模型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#浮动模型"><span class="nav-number">3.</span> <span class="nav-text">浮动模型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#两个经典Bug及其解决方法"><span class="nav-number">4.</span> <span class="nav-text">两个经典Bug及其解决方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-margin塌陷"><span class="nav-number">4.0.1.</span> <span class="nav-text">1.margin塌陷</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-margin合并"><span class="nav-number">4.0.2.</span> <span class="nav-text">2.margin合并</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#盒模型"><span class="nav-number">1.</span> <span class="nav-text">盒模型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#两种盒模型"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">两种盒模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#box-sizing属性的语法及参数"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">box-sizing属性的语法及参数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#盒模型的margin与padding："><span class="nav-number">1.0.0.3.</span> <span class="nav-text">盒模型的margin与padding：</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#层模型"><span class="nav-number">2.</span> <span class="nav-text">层模型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#position-absolute-relative-fixed-sticky"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">position: absolute | relative | fixed | sticky</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#值：left-right-top-bottom-100px-（以px为单位）"><span class="nav-number">2.0.0.2.</span> <span class="nav-text">值：left &#x2F; right &#x2F; top &#x2F; bottom : 100px; （以px为单位）</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#浮动模型"><span class="nav-number">3.</span> <span class="nav-text">浮动模型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#浮动：float-left-right"><span class="nav-number">3.0.0.1.</span> <span class="nav-text">浮动：float: left &#x2F; right ;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#清除浮动流：clear-left-right-both"><span class="nav-number">3.0.0.2.</span> <span class="nav-text">清除浮动流：clear: left &#x2F; right &#x2F; both ;</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#两个经典Bug及其解决方法"><span class="nav-number">4.</span> <span class="nav-text">两个经典Bug及其解决方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-margin塌陷"><span class="nav-number">4.0.1.</span> <span class="nav-text">1.margin塌陷</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-margin合并"><span class="nav-number">4.0.2.</span> <span class="nav-text">2.margin合并</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
