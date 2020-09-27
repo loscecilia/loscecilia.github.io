@@ -20,22 +20,20 @@
     var CONFIG = {"hostname":"loscecilia.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="选择器权重！important &gt; 行间样式 &gt; id &gt; class &#x2F; 属性选择器 &gt; 标签选择器 &gt; 通配符选择器 （若优先级相同，后面的代码覆盖前面的）    选择器 权重    !important Infinity（正无穷）   行间样式 1000   id 100   class&#x2F;属性&#x2F;伪类 10   标签&#x2F;伪元素 1   通配符 0   权重数字为25">
+  <meta name="description" content="columns属性是一个复合属性——列宽（column-width）和列数（column-count），可以同时定义多列的列数和每列的列宽。  columns: column-width || column-count  column-width：定义多列种每列的宽度。 column-count：定义多列中的列数。   column-width属性类似于给列定义一个最小宽度（min-width）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS知识点总结">
-<meta property="og:url" content="https://loscecilia.github.io/2020/09/27/CSS%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:title" content="CSS3多列布局">
+<meta property="og:url" content="https://loscecilia.github.io/2020/09/27/CSS3%E5%A4%9A%E5%88%97%E5%B8%83%E5%B1%80/index.html">
 <meta property="og:site_name" content="Cecilia&#39;s blog">
-<meta property="og:description" content="选择器权重！important &gt; 行间样式 &gt; id &gt; class &#x2F; 属性选择器 &gt; 标签选择器 &gt; 通配符选择器 （若优先级相同，后面的代码覆盖前面的）    选择器 权重    !important Infinity（正无穷）   行间样式 1000   id 100   class&#x2F;属性&#x2F;伪类 10   标签&#x2F;伪元素 1   通配符 0   权重数字为25">
+<meta property="og:description" content="columns属性是一个复合属性——列宽（column-width）和列数（column-count），可以同时定义多列的列数和每列的列宽。  columns: column-width || column-count  column-width：定义多列种每列的宽度。 column-count：定义多列中的列数。   column-width属性类似于给列定义一个最小宽度（min-width）">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xNTI1MTI1MS1jNWI3ODI2NDQ5ODYzYWM3LlBORw?x-oss-process=image/format,png">
-<meta property="article:published_time" content="2020-09-27T11:49:58.000Z">
-<meta property="article:modified_time" content="2020-09-27T13:27:27.744Z">
+<meta property="article:published_time" content="2020-09-27T14:03:55.000Z">
+<meta property="article:modified_time" content="2020-09-27T14:04:54.521Z">
 <meta property="article:author" content="Cecilia">
-<meta property="article:tag" content="CSS">
+<meta property="article:tag" content="CSS CSS3">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xNTI1MTI1MS1jNWI3ODI2NDQ5ODYzYWM3LlBORw?x-oss-process=image/format,png">
 
-<link rel="canonical" href="https://loscecilia.github.io/2020/09/27/CSS%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">
+<link rel="canonical" href="https://loscecilia.github.io/2020/09/27/CSS3%E5%A4%9A%E5%88%97%E5%B8%83%E5%B1%80/">
 
 
 <script id="page-configurations">
@@ -48,7 +46,7 @@
   };
 </script>
 
-  <title>CSS知识点总结 | Cecilia's blog</title>
+  <title>CSS3多列布局 | Cecilia's blog</title>
   
 
 
@@ -169,7 +167,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://loscecilia.github.io/2020/09/27/CSS%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">
+    <link itemprop="mainEntityOfPage" href="https://loscecilia.github.io/2020/09/27/CSS3%E5%A4%9A%E5%88%97%E5%B8%83%E5%B1%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -182,7 +180,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          CSS知识点总结
+          CSS3多列布局
         </h1>
 
         <div class="post-meta">
@@ -193,7 +191,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-09-27 19:49:58 / Modified: 21:27:27" itemprop="dateCreated datePublished" datetime="2020-09-27T19:49:58+08:00">2020-09-27</time>
+              <time title="Created: 2020-09-27 22:03:55 / Modified: 22:04:54" itemprop="dateCreated datePublished" datetime="2020-09-27T22:03:55+08:00">2020-09-27</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -201,7 +199,7 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CSS/" itemprop="url" rel="index"><span itemprop="name">CSS</span></a>
+                  <a href="/categories/CSS-CSS3/" itemprop="url" rel="index"><span itemprop="name">CSS CSS3</span></a>
                 </span>
             </span>
 
@@ -223,97 +221,66 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="选择器权重"><a href="#选择器权重" class="headerlink" title="选择器权重"></a>选择器权重</h2><p>！important &gt; 行间样式 &gt; id &gt; class / 属性选择器 &gt; 标签选择器 &gt; 通配符选择器</p>
-<p><em>（若优先级相同，后面的代码覆盖前面的）</em></p>
-<table>
-<thead>
-<tr>
-<th align="center">选择器</th>
-<th align="center">权重</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">!important</td>
-<td align="center">Infinity（正无穷）</td>
-</tr>
-<tr>
-<td align="center">行间样式</td>
-<td align="center">1000</td>
-</tr>
-<tr>
-<td align="center">id</td>
-<td align="center">100</td>
-</tr>
-<tr>
-<td align="center">class/属性/伪类</td>
-<td align="center">10</td>
-</tr>
-<tr>
-<td align="center">标签/伪元素</td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td align="center">通配符</td>
-<td align="center">0</td>
-</tr>
-</tbody></table>
-<p><strong>权重数字为256进制</strong><br><strong>权重值相同后面的代码会覆盖前面的</strong></p>
-<hr>
-<h2 id="display值及其属性"><a href="#display值及其属性" class="headerlink" title="display值及其属性"></a>display值及其属性</h2><p><strong>display: inline | block | inline-block;</strong></p>
-<ol>
-<li>行级元素（内联元素）inline：<br>内容决定元素所占位置；<br>不可以通过CSS改变宽高。<br>常见标签有：span , strong , em , a , del</li>
-<li>块级元素block：<br>独占一行；<br>可以通过CSS改变宽高。<br>常见标签有：div , p , ul , li , ol , form , address</li>
-<li>行级块元素inline-block：<br>内容决定大小；<br>可以通过CSS改变宽高。<br>常见标签有：img</li>
+        <ol>
+<li>columns属性是一个复合属性——列宽（column-width）和列数（column-count），可以同时定义多列的列数和每列的列宽。</li>
 </ol>
-<p><strong>凡是带有inline的元素，都有文字特性</strong><br><strong>多个img中间有空隙，去掉空隙的方法：去掉多个img标签之间的空格（即把多个img标签写在一行）</strong></p>
-<hr>
-<h2 id="颜色表示方法"><a href="#颜色表示方法" class="headerlink" title="颜色表示方法"></a>颜色表示方法</h2><ol>
-<li>纯英文单词（transparent为透明色）；</li>
-<li>颜色代码：<br>rgb(red,green,blue)，每一个值由两位十六进制数组成，共由六位十六进制数组成，如：#000000为黑色，#ff0000为红色；</li>
-<li>颜色函数：<br>rgb(255,255,255)，每一位数字范围为0-255，为十进制数。</li>
-</ol>
-<hr>
-<h2 id="CSS字体"><a href="#CSS字体" class="headerlink" title="CSS字体"></a>CSS字体</h2><h3 id="CSS中五种通用的字体系列"><a href="#CSS中五种通用的字体系列" class="headerlink" title="CSS中五种通用的字体系列"></a>CSS中五种通用的字体系列</h3><ul>
-<li><strong>Serif 字体</strong><br>这些字体成比例，而且有上下短线。如果字体中的所有字符根据其不同大小有不同的宽度，则成该字符是成比例的。例如，小写 i 和小写 m 的宽度就不同。上下短线是每个字符笔划末端的装饰，比如小写 l 顶部和底部的短线，或大写 A 两条腿底部的短线。Serif 字体的例子包括 Times、Georgia 和 New Century Schoolbook。</li>
-<li><strong>Sans-serif 字体</strong><br>这些字体是成比例的，而且没有上下短线。Sans-serif 字体的例子包括 Helvetica、Geneva、Verdana、Arial 或 Univers。</li>
-<li><strong>Monospace 字体</strong><br>Monospace 字体并不是成比例的。它们通常用于模拟打字机打出的文本、老式点阵打印机的输出，甚至更老式的视频显示终端。采用这些字体，每个字符的宽度都必须完全相同，所以小写的 i 和小写的 m 有相同的宽度。这些字体可能有上下短线，也可能没有。如果一个字体的字符宽度完全相同，则归类为 Monospace 字体，而不论是否有上下短线。Monospace 字体的例子包括 Courier、Courier New 和 Andale Mono。</li>
-<li><strong>Cursive 字体</strong><br>这些字体试图模仿人的手写体。通常，它们主要由曲线和 Serif 字体中没有的笔划装饰组成。例如，大写 A 再其左腿底部可能有一个小弯，或者完全由花体部分和小的弯曲部分组成。Cursive 字体的例子包括 Zapf Chancery、Author 和 Comic Sans。</li>
-<li><strong>Fantasy 字体</strong><br>这些字体无法用任何特征来定义，只有一点是确定的，那就是我们无法很容易地将其规划到任何一种其他的字体系列当中。这样的字体包括 Western、Woodblock 和 Klingon。<br><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xNTI1MTI1MS1jNWI3ODI2NDQ5ODYzYWM3LlBORw?x-oss-process=image/format,png" alt="五种通用字体系列"></li>
-</ul>
-<h3 id="怎样设置多个字体，设置多个字体的时候要注意什么"><a href="#怎样设置多个字体，设置多个字体的时候要注意什么" class="headerlink" title="怎样设置多个字体，设置多个字体的时候要注意什么"></a>怎样设置多个字体，设置多个字体的时候要注意什么</h3><ul>
-<li>使用font-family，用逗号分隔字体族名称，当第一种字体不能显示时显示第二种，进行逐一匹配，如果字体都找不到就用浏览器默认字体。</li>
-<li>用span标签给想选中的字体加属性。</li>
-</ul>
-<h3 id="px，em，rem"><a href="#px，em，rem" class="headerlink" title="px，em，rem"></a>px，em，rem</h3><ol>
-<li>概念</li>
-</ol>
+<p><strong>columns: column-width || column-count</strong></p>
 <ul>
-<li>px：绝对单位，页面按精确像素展示。</li>
-<li>em：相对单位，基准点为父节点字体的大小，如果自身定义了<a href="https://www.baidu.com/s?wd=font-size&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao" target="_blank" rel="noopener">font-size</a>按自身来计算（浏览器默认字体是16px），整个页面内1em不是一个固定的值。</li>
-<li>rem：相对单位，可理解为”root em”, 相对根节点html的字体大小来计算，CSS3新加属性，chrome/firefox/IE9+支持。</li>
+<li>column-width：定义多列种每列的宽度。</li>
+<li>column-count：定义多列中的列数。</li>
 </ul>
 <ol start="2">
-<li>特点</li>
+<li>column-width属性类似于给列定义一个最小宽度（min-width）。</li>
 </ol>
+<p><strong>column-width: auto | &lt;length&gt;</strong></p>
 <ul>
-<li>px特点：</li>
+<li>auto：默认值，如果值为auto或者没有显示设置值时，元素多列的列宽将有其他属性来决定。</li>
+<li>&lt;length&gt;：使用固定值来设置元素列的宽度，其主要是由数值和长度单位组成，不过其值只能时正值，不能为负值。<br><strong>column-width单独使用时，当容器超出列宽时，会以多列显示，反之容器宽度小与设置的列宽时，容器将只显示为一列。</strong></li>
 </ul>
-<ol>
-<li>IE无法调整那些使用px作为单位的字体大小；</li>
-<li>国外的大部分网站能够调整的原因在于其使用了em或rem作为字体单位；</li>
-<li>Firefox能够调整px和em，rem，但是96%以上的中国网民使用IE浏览器(或内核)。</li>
+<ol start="3">
+<li>column-count属性主要用来给元素指定想要的列数和允许的最大列数。</li>
 </ol>
+<p><strong>column-count: auto | &lt;integer&gt;</strong></p>
 <ul>
-<li>em特点 ：</li>
+<li>auto：默认值，表示元素只有一列，其主要依靠浏览器计算自动设置。</li>
+<li>&lt;integer&gt;：正整数值，主要用来定义元素的列数，取值为大于0的整数，负值无效。</li>
 </ul>
-<ol>
-<li>em的值并不是固定的；</li>
-<li>em会继承父级元素的字体大小。</li>
+<p><strong>列数=（容器宽度-间距）/列间距</strong><br><strong>浏览器对所求列数的值是去余取整，且如果元素设置了列数，不管元素容器的宽度是多少或者间距多少，总是显示固定的列数。</strong></p>
+<ol start="4">
+<li>column-gap属性类似于盒模型中的margin一样，主要用来设置元素分列的列间距，其只能设置列与列之间的间距。</li>
 </ol>
+<p><strong>column-gap: normal | &lt;length&gt;</strong></p>
 <ul>
-<li>rem特点：<br>rem是CSS3新增的一个相对单位（root em，根em），这个单位引起了广泛关注。区别在于使用rem为元素设定字体大小时，仍然是相对大小，但相对的只是HTML根元素。<br>这个单位可谓集相对大小和绝对大小的优点于一身，通过它既可以做到只修改根元素就成比例地调整所有字体大小，又可以避免字体大小逐层复合的连锁反应。<br>目前，除了IE8及更早版本外，所有浏览器均已支持rem。对于不支持它的浏览器，应对方法也很简单，就是多写一个绝对单位的声明。这些浏览器会忽略用rem设定的字体大小。</li>
+<li>normal：默认值，主要通过浏览器默认设置时行解析，一般情况下，normal值相当于1em。</li>
+<li>&lt;length&gt;：由浮点数字和单位标识符组成的长度值，主要用来设置列与列之间的距离，常用px、em单位的任何整数值，其值不能为负值。</li>
 </ul>
-<hr>
+<p><strong>column-gap可以用来改变相邻列之间距离，但在多列元素同时设置了column-width时，column-gap与column-width等参数之和大于多列元素总宽度时，会导致列被撑破，并将以当前列数减1的列数显示，此时列宽自动调节到适当的列宽。</strong></p>
+<ol start="5">
+<li>column-rule属性主要是用来定义列与列之间的边框宽度、边框样式和边框颜色，有些类似于常用的border属性，但column-rule是不占用任何空间位置的，在列与列之间改变其宽度不会改变任何列的位置。</li>
+</ol>
+<p><strong>column-rule: column-rule-width | column-rule-style | column-rule-color</strong></p>
+<ul>
+<li>column-rule-width：类似于border-width属性，主要用来定义列边框的宽度，其默认值为medium，该属性接受任意浮点数，但不接受负值。像border-width属性一样，可以使用款见此medium、thick和thin。</li>
+<li>column-rule-style：此值类似于border-style属性，主要用来定义列边框样式，其默认值为none。该属性值与border-style属性值相同，包括none、hidden、dotted、dashed、solid、double、groove、ridge、inset、outset。</li>
+<li>column-rule-color：此值类似于border-color属性，主要用来定义列边框颜色，其默认值为前景色color的值，使用时相当于border-color。该属性接受所有的颜色。如果不希望显示颜色，也可以将其值设置为transparent（透明色）。</li>
+</ul>
+<p><strong>column-rule-width增大并不会影响列的布局，其不占有任何空间位置。</strong><br><strong>column-rule在Z轴上是介于background和content之间，当column-rule-width宽度增加到超过列与列的间距时，列边框就会自动消失。</strong></p>
+<ol start="6">
+<li>column-span属性主要用来定义一个分列元素中的子元素能跨多少列，有时需要一段内容或一个标题不进行分列，也就是横跨所有列，就可以用该属性实现。</li>
+</ol>
+<p><strong>column-span: none | all</strong></p>
+<ul>
+<li>none：默认值，表示不跨越任何列。</li>
+<li>all：跟none值正好相反，表示的是跨越所有列，并定位在列的Z轴之上。</li>
+</ul>
+<ol start="7">
+<li>column-fill属性主要用来定义多列种每一列的高度是否统一。</li>
+</ol>
+<p><strong>column-fill: auto | balance</strong></p>
+<ul>
+<li>auto：默认值，各列的高度随其内容的变化自动变化。</li>
+<li>balance：各列的高度将会根据内容最多的一列的高度进行统一。</li>
+</ul>
 
     </div>
 
@@ -329,7 +296,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link: </strong>
-    <a href="https://loscecilia.github.io/2020/09/27/CSS%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" title="CSS知识点总结">https://loscecilia.github.io/2020/09/27/CSS知识点总结/</a>
+    <a href="https://loscecilia.github.io/2020/09/27/CSS3%E5%A4%9A%E5%88%97%E5%B8%83%E5%B1%80/" title="CSS3多列布局">https://loscecilia.github.io/2020/09/27/CSS3多列布局/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -340,7 +307,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/CSS/" rel="tag"># CSS</a>
+              <a href="/tags/CSS-CSS3/" rel="tag"># CSS CSS3</a>
           </div>
 
         
@@ -349,12 +316,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/08/03/ES6%E6%96%B0%E7%89%B9%E6%80%A7/" rel="prev" title="ES6新特性">
-      <i class="fa fa-chevron-left"></i> ES6新特性
+    <a href="/2020/09/27/CSS3%E5%8A%A8%E7%94%BB/" rel="prev" title="CSS3动画">
+      <i class="fa fa-chevron-left"></i> CSS3动画
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/09/27/CSS%E7%9B%92%E6%A8%A1%E5%9E%8B%E3%80%81%E5%B1%82%E6%A8%A1%E5%9E%8B%E3%80%81%E6%B5%AE%E5%8A%A8%E6%A8%A1%E5%9E%8B/" rel="next" title="CSS盒模型、层模型、浮动模型">
-      CSS盒模型、层模型、浮动模型 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/09/27/CSS3%E8%BE%B9%E6%A1%86%E3%80%81%E8%83%8C%E6%99%AF%E3%80%81%E6%96%87%E6%9C%AC%E6%95%88%E6%9E%9C%E3%80%81%E5%AD%97%E4%BD%93/" rel="next" title="CSS3边框、背景、文本效果、字体">
+      CSS3边框、背景、文本效果、字体 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -414,7 +381,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#选择器权重"><span class="nav-number">1.</span> <span class="nav-text">选择器权重</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#display值及其属性"><span class="nav-number">2.</span> <span class="nav-text">display值及其属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#颜色表示方法"><span class="nav-number">3.</span> <span class="nav-text">颜色表示方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS字体"><span class="nav-number">4.</span> <span class="nav-text">CSS字体</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS中五种通用的字体系列"><span class="nav-number">4.1.</span> <span class="nav-text">CSS中五种通用的字体系列</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#怎样设置多个字体，设置多个字体的时候要注意什么"><span class="nav-number">4.2.</span> <span class="nav-text">怎样设置多个字体，设置多个字体的时候要注意什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#px，em，rem"><span class="nav-number">4.3.</span> <span class="nav-text">px，em，rem</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
