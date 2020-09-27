@@ -20,30 +20,33 @@
     var CONFIG = {"hostname":"loscecilia.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="小徐小徐，一条咸鱼">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Cecilia&#39;s blog">
-<meta property="og:url" content="https://loscecilia.github.io/index.html">
+  <meta name="description" content="let变量声明及声明特性声明变量：1234let a;let b,c,d;let e &#x3D; 100;let f &#x3D; 521, g &#x3D; &#39;hello&#39;, h &#x3D; []; 特性： 变量不能重复声明（防止变量污染）1234567&#x2F;&#x2F;ES6let star &#x3D; &#39;a&#39;;let star &#x3D; &#39;b&#39;;     &#x2F;&#x2F;报错&#x2F;&#x2F;ES5var str &#x3D; &#39;abc&#39;;var str &#x3D; &#39;def&#39;;    &#x2F;&#x2F;不报错">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ES6新特性">
+<meta property="og:url" content="https://loscecilia.github.io/2020/08/03/ES6%E6%96%B0%E7%89%B9%E6%80%A7/index.html">
 <meta property="og:site_name" content="Cecilia&#39;s blog">
-<meta property="og:description" content="小徐小徐，一条咸鱼">
+<meta property="og:description" content="let变量声明及声明特性声明变量：1234let a;let b,c,d;let e &#x3D; 100;let f &#x3D; 521, g &#x3D; &#39;hello&#39;, h &#x3D; []; 特性： 变量不能重复声明（防止变量污染）1234567&#x2F;&#x2F;ES6let star &#x3D; &#39;a&#39;;let star &#x3D; &#39;b&#39;;     &#x2F;&#x2F;报错&#x2F;&#x2F;ES5var str &#x3D; &#39;abc&#39;;var str &#x3D; &#39;def&#39;;    &#x2F;&#x2F;不报错">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-08-03T01:41:01.000Z">
+<meta property="article:modified_time" content="2020-08-03T10:30:57.933Z">
 <meta property="article:author" content="Cecilia">
+<meta property="article:tag" content="ES6">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://loscecilia.github.io/">
+<link rel="canonical" href="https://loscecilia.github.io/2020/08/03/ES6%E6%96%B0%E7%89%B9%E6%80%A7/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Cecilia's blog</title>
+  <title>ES6新特性 | Cecilia's blog</title>
   
 
 
@@ -157,108 +160,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://loscecilia.github.io/2020/09/27/CSS%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Cecilia">
-      <meta itemprop="description" content="小徐小徐，一条咸鱼">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Cecilia's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/27/CSS%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/" class="post-title-link" itemprop="url">CSS知识点汇总.md</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2020-09-27 19:49:58 / Modified: 20:36:32" itemprop="dateCreated datePublished" datetime="2020-09-27T19:49:58+08:00">2020-09-27</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CSS/" itemprop="url" rel="index"><span itemprop="name">CSS</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
 
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="CSS字体"><a href="#CSS字体" class="headerlink" title="CSS字体"></a>CSS字体</h2><h3 id="CSS中五种通用的字体系列"><a href="#CSS中五种通用的字体系列" class="headerlink" title="CSS中五种通用的字体系列"></a>CSS中五种通用的字体系列</h3><ul>
-<li><strong>Serif 字体</strong><br>这些字体成比例，而且有上下短线。如果字体中的所有字符根据其不同大小有不同的宽度，则成该字符是成比例的。例如，小写 i 和小写 m 的宽度就不同。上下短线是每个字符笔划末端的装饰，比如小写 l 顶部和底部的短线，或大写 A 两条腿底部的短线。Serif 字体的例子包括 Times、Georgia 和 New Century Schoolbook。</li>
-<li><strong>Sans-serif 字体</strong><br>这些字体是成比例的，而且没有上下短线。Sans-serif 字体的例子包括 Helvetica、Geneva、Verdana、Arial 或 Univers。</li>
-<li><strong>Monospace 字体</strong><br>Monospace 字体并不是成比例的。它们通常用于模拟打字机打出的文本、老式点阵打印机的输出，甚至更老式的视频显示终端。采用这些字体，每个字符的宽度都必须完全相同，所以小写的 i 和小写的 m 有相同的宽度。这些字体可能有上下短线，也可能没有。如果一个字体的字符宽度完全相同，则归类为 Monospace 字体，而不论是否有上下短线。Monospace 字体的例子包括 Courier、Courier New 和 Andale Mono。</li>
-<li><strong>Cursive 字体</strong><br>这些字体试图模仿人的手写体。通常，它们主要由曲线和 Serif 字体中没有的笔划装饰组成。例如，大写 A 再其左腿底部可能有一个小弯，或者完全由花体部分和小的弯曲部分组成。Cursive 字体的例子包括 Zapf Chancery、Author 和 Comic Sans。</li>
-<li><strong>Fantasy 字体</strong><br>这些字体无法用任何特征来定义，只有一点是确定的，那就是我们无法很容易地将其规划到任何一种其他的字体系列当中。这样的字体包括 Western、Woodblock 和 Klingon。<br><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xNTI1MTI1MS1jNWI3ODI2NDQ5ODYzYWM3LlBORw?x-oss-process=image/format,png" alt="五种通用字体系列"></li>
-</ul>
-<h3 id="怎样设置多个字体，设置多个字体的时候要注意什么"><a href="#怎样设置多个字体，设置多个字体的时候要注意什么" class="headerlink" title="怎样设置多个字体，设置多个字体的时候要注意什么"></a>怎样设置多个字体，设置多个字体的时候要注意什么</h3><ul>
-<li>使用font-family，用逗号分隔字体族名称，当第一种字体不能显示时显示第二种，进行逐一匹配，如果字体都找不到就用浏览器默认字体。</li>
-<li>用span标签给想选中的字体加属性。</li>
-</ul>
-<h3 id="px，em，rem"><a href="#px，em，rem" class="headerlink" title="px，em，rem"></a>px，em，rem</h3><ol>
-<li>概念</li>
-</ol>
-<ul>
-<li>px：绝对单位，页面按精确像素展示。</li>
-<li>em：相对单位，基准点为父节点字体的大小，如果自身定义了<a href="https://www.baidu.com/s?wd=font-size&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao" target="_blank" rel="noopener">font-size</a>按自身来计算（浏览器默认字体是16px），整个页面内1em不是一个固定的值。</li>
-<li>rem：相对单位，可理解为”root em”, 相对根节点html的字体大小来计算，CSS3新加属性，chrome/firefox/IE9+支持。</li>
-</ul>
-<ol start="2">
-<li>特点</li>
-</ol>
-<ul>
-<li>px特点：</li>
-</ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/09/27/CSS%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
@@ -274,10 +179,9 @@
       <meta itemprop="name" content="Cecilia's blog">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/08/03/ES6%E6%96%B0%E7%89%B9%E6%80%A7/" class="post-title-link" itemprop="url">ES6新特性</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          ES6新特性
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -300,6 +204,13 @@
             </span>
 
           
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
 
         </div>
       </header>
@@ -310,7 +221,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="let变量声明及声明特性"><a href="#let变量声明及声明特性" class="headerlink" title="let变量声明及声明特性"></a>let变量声明及声明特性</h2><h4 id="声明变量："><a href="#声明变量：" class="headerlink" title="声明变量："></a>声明变量：</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a;</span><br><span class="line"><span class="keyword">let</span> b,c,d;</span><br><span class="line"><span class="keyword">let</span> e = <span class="number">100</span>;</span><br><span class="line"><span class="keyword">let</span> f = <span class="number">521</span>, g = <span class="string">'hello'</span>, h = [];</span><br></pre></td></tr></table></figure>
+        <h2 id="let变量声明及声明特性"><a href="#let变量声明及声明特性" class="headerlink" title="let变量声明及声明特性"></a>let变量声明及声明特性</h2><h4 id="声明变量："><a href="#声明变量：" class="headerlink" title="声明变量："></a>声明变量：</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a;</span><br><span class="line"><span class="keyword">let</span> b,c,d;</span><br><span class="line"><span class="keyword">let</span> e = <span class="number">100</span>;</span><br><span class="line"><span class="keyword">let</span> f = <span class="number">521</span>, g = <span class="string">'hello'</span>, h = [];</span><br></pre></td></tr></table></figure>
 <h4 id="特性："><a href="#特性：" class="headerlink" title="特性："></a>特性：</h4><ol>
 <li>变量不能重复声明（防止变量污染）<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//ES6</span></span><br><span class="line"><span class="keyword">let</span> star = <span class="string">'a'</span>;</span><br><span class="line"><span class="keyword">let</span> star = <span class="string">'b'</span>;     <span class="comment">//报错</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//ES5</span></span><br><span class="line"><span class="keyword">var</span> str = <span class="string">'abc'</span>;</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">'def'</span>;    <span class="comment">//不报错</span></span><br></pre></td></tr></table></figure></li>
 <li>块级作用域（ES5：全局、函数、eval）<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="keyword">let</span> a = <span class="number">12</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(a);     <span class="comment">//报错</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//if else while for块级作用域中同样有效</span></span><br></pre></td></tr></table></figure></li>
@@ -322,109 +233,78 @@
 </ol>
 <hr>
 <h2 id="const声明常量以及特点"><a href="#const声明常量以及特点" class="headerlink" title="const声明常量以及特点"></a>const声明常量以及特点</h2><h4 id="声明常量："><a href="#声明常量：" class="headerlink" title="声明常量："></a>声明常量：</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> SCHOOL = <span class="string">'XUPT'</span>;</span><br></pre></td></tr></table></figure>
-<h4 id="特点："><a href="#特点：" class="headerlink" title="特点："></a>特点：</h4>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/08/03/ES6%E6%96%B0%E7%89%B9%E6%80%A7/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
+<h4 id="特点："><a href="#特点：" class="headerlink" title="特点："></a>特点：</h4><ol>
+<li>一定要赋初始值<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> A;    <span class="comment">//报错</span></span><br></pre></td></tr></table></figure></li>
+<li>一般常量使用大写（潜规则）</li>
+<li>常量的值不可修改，不可重复声明<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> SCHOOL = <span class="string">'XUPT'</span>;</span><br><span class="line">SCHOOL = <span class="string">'ABC'</span>;     <span class="comment">//报错</span></span><br><span class="line"><span class="keyword">const</span> SCHOOL = <span class="string">'SSS'</span>;   <span class="comment">//报错</span></span><br></pre></td></tr></table></figure></li>
+<li>块级作用域<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="keyword">const</span> PLAYER = <span class="string">'UZI'</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(PLAYER);    <span class="comment">//报错</span></span><br></pre></td></tr></table></figure></li>
+<li>对于<strong>数组</strong>和<strong>对象</strong>的元素修改，不算做对常量的修改，不会报错<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> TEAM = [<span class="string">'UZI'</span>,<span class="string">'MLXG'</span>,<span class="string">'Ming'</span>,<span class="string">'letme'</span>];</span><br><span class="line">TEAM.push(<span class="string">'Meki0'</span>);     <span class="comment">//虽然数组内容变化，但常量保存的地址未变，故不会报错</span></span><br><span class="line">TEAM = <span class="number">100</span>;     <span class="comment">//报错</span></span><br></pre></td></tr></table></figure>
+<h4 id="本质：const实际上保证的并不是变量的值不得改动，而是变量指向的那个内存地址不得改动。"><a href="#本质：const实际上保证的并不是变量的值不得改动，而是变量指向的那个内存地址不得改动。" class="headerlink" title="本质：const实际上保证的并不是变量的值不得改动，而是变量指向的那个内存地址不得改动。"></a>本质：const实际上保证的并不是变量的值不得改动，而是变量指向的那个<u>内存地址</u>不得改动。</h4></li>
+</ol>
+<ul>
+<li>对于简单数据类型（数值、字符串、布尔值）而言，值就保存在变量指向的内存地址中，因此等同于常量。</li>
+<li>对于符合类型数据（主要是对象和数值）而言，变量指向的内存地址保存的只是一个指针，const只能保证这个指针是固定的，至于它指向的数据结构是不是可变的，完全不能控制。<h4 id="顶层对象的属性："><a href="#顶层对象的属性：" class="headerlink" title="顶层对象的属性："></a>顶层对象的属性：</h4></li>
+<li>var，function命令声明的全局变量依旧是顶层对象的属性。</li>
+<li>let，const，class命令声明的全局变量不属于顶层对象的属性。<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.a);  <span class="comment">//1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> b = <span class="number">1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.b);  <span class="comment">//undefined</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<h2 id="变量的解构赋值"><a href="#变量的解构赋值" class="headerlink" title="变量的解构赋值"></a>变量的解构赋值</h2><p>ES6允许按照一定模式从数组和对象中提取值，对变量进行赋值，这被称作解构赋值。</p>
+<ol>
+<li>数组的解构赋值<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> F4 = [<span class="string">'老王'</span>,<span class="string">'老李'</span>,<span class="string">'老张'</span>,<span class="string">'老邓'</span>]；</span><br><span class="line"><span class="keyword">let</span> [wang,li,zhang,deng] = F4;</span><br><span class="line"><span class="built_in">console</span>.log(wang);      <span class="comment">//老王</span></span><br><span class="line"><span class="built_in">console</span>.log(li);        <span class="comment">//老李</span></span><br><span class="line"><span class="built_in">console</span>.log(zhang);     <span class="comment">//老张</span></span><br><span class="line"><span class="built_in">console</span>.log(deng);      <span class="comment">//老邓</span></span><br></pre></td></tr></table></figure></li>
+<li>对象的解构赋值<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> wang = &#123;</span><br><span class="line">    name: <span class="string">'老王'</span>,</span><br><span class="line">    age: <span class="number">30</span>,</span><br><span class="line">    job: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        concole.log(<span class="string">'programmer'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> &#123;name,age,job&#125; = wang;</span><br><span class="line"><span class="built_in">console</span>.log(name);  <span class="comment">//老王</span></span><br><span class="line"><span class="built_in">console</span>.log(age);   <span class="comment">//30</span></span><br><span class="line"><span class="built_in">console</span>.log(job);   <span class="comment">//fn()</span></span><br><span class="line">job();      <span class="comment">//programmer</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<hr>
+<h2 id="模板字符串"><a href="#模板字符串" class="headerlink" title="模板字符串"></a>模板字符串</h2><p>ES6引入新的声明字符串方式 <code>``</code> 反引号。（ES5：<code>&#39;&#39;</code>，<code>&quot;&quot;</code>）</p>
+<h4 id="声明："><a href="#声明：" class="headerlink" title="声明："></a>声明：</h4>
     </div>
 
     
     
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://loscecilia.github.io/2020/07/27/Webpack%E5%88%9D%E6%8E%A2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Cecilia">
-      <meta itemprop="description" content="小徐小徐，一条咸鱼">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Cecilia's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/07/27/Webpack%E5%88%9D%E6%8E%A2/" class="post-title-link" itemprop="url">Webpack初探</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2020-07-27 20:48:23 / Modified: 23:55:20" itemprop="dateCreated datePublished" datetime="2020-07-27T20:48:23+08:00">2020-07-27</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Webpack/" itemprop="url" rel="index"><span itemprop="name">Webpack</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="Webpack是什么"><a href="#Webpack是什么" class="headerlink" title="Webpack是什么"></a>Webpack是什么</h3><p>Webpack是一种前端资源构建工具，一个静态模块打包器（module bundler）。在Webpack看来，前端的所有资源文件（js/json/css/img/less/…）都会作为模块处理。它将根据模块的依赖关系进行静态分析，打包生成对应的静态资源（bundle）。<br><img src="https://img-blog.csdnimg.cn/20200329133033421.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTkzNDgxNg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h3 id="Webpack-五个核心概念"><a href="#Webpack-五个核心概念" class="headerlink" title="Webpack 五个核心概念"></a>Webpack 五个核心概念</h3><h4 id="Entry"><a href="#Entry" class="headerlink" title="Entry"></a>Entry</h4><p>入口（Entry）指示Webpack以哪个文件为入口起点开始打包，分析构建内部依赖图。</p>
-<h4 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h4><p>输出（Output）指示Webpack打包后的资源bundles输出到哪里去，以及如何命名。</p>
-<h4 id="Loader"><a href="#Loader" class="headerlink" title="Loader"></a>Loader</h4><p>Loader让Webpack能够去处理那些非JavaScript文件（Webpack自身只能理解JavaScript）。</p>
-<h4 id="Plugins"><a href="#Plugins" class="headerlink" title="Plugins"></a>Plugins</h4>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/07/27/Webpack%E5%88%9D%E6%8E%A2/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:  </strong>Cecilia
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link: </strong>
+    <a href="https://loscecilia.github.io/2020/08/03/ES6%E6%96%B0%E7%89%B9%E6%80%A7/" title="ES6新特性">https://loscecilia.github.io/2020/08/03/ES6新特性/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
+          <div class="post-tags">
+              <a href="/tags/ES6/" rel="tag"># ES6</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/07/27/Webpack%E5%88%9D%E6%8E%A2/" rel="prev" title="Webpack初探">
+      <i class="fa fa-chevron-left"></i> Webpack初探
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/09/27/CSS%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/" rel="next" title="CSS知识点汇总.md">
+      CSS知识点汇总.md <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -477,6 +357,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#let变量声明及声明特性"><span class="nav-number">1.</span> <span class="nav-text">let变量声明及声明特性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#声明变量："><span class="nav-number">1.0.1.</span> <span class="nav-text">声明变量：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#特性："><span class="nav-number">1.0.2.</span> <span class="nav-text">特性：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#实例："><span class="nav-number">1.0.3.</span> <span class="nav-text">实例：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#const声明常量以及特点"><span class="nav-number">2.</span> <span class="nav-text">const声明常量以及特点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#声明常量："><span class="nav-number">2.0.1.</span> <span class="nav-text">声明常量：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#特点："><span class="nav-number">2.0.2.</span> <span class="nav-text">特点：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#本质：const实际上保证的并不是变量的值不得改动，而是变量指向的那个内存地址不得改动。"><span class="nav-number">2.0.3.</span> <span class="nav-text">本质：const实际上保证的并不是变量的值不得改动，而是变量指向的那个内存地址不得改动。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#顶层对象的属性："><span class="nav-number">2.0.4.</span> <span class="nav-text">顶层对象的属性：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#变量的解构赋值"><span class="nav-number">3.</span> <span class="nav-text">变量的解构赋值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模板字符串"><span class="nav-number">4.</span> <span class="nav-text">模板字符串</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#声明："><span class="nav-number">4.0.1.</span> <span class="nav-text">声明：</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
